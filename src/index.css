@@ -1,106 +1,32 @@
-body {
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  list-style: none;
+  text-decoration: none;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Start About */
-.about {
-  padding: 50px 0;
-}
-.about .container {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: space-around;
-  gap: 40px;
-}
-@media (max-width: 992px) {
-  .about .container {
-      flex-direction: column;
-      text-align: center;
-  }
-}
-.about .container img {
-  max-width: 400px;
-}
 @media (max-width: 767px) {
+  .about .container .img {
+    width: 100%;
+  }
   .about .container img {
     max-width: 100%;
   }
-}
-.about .container .box {
-  max-width: 500px;
 }
 @media (max-width: 992px) {
   .about .container .box {
     max-width: 100%;
   }
 }
-.about .container h1 {
-  color: var(--main-color);
-  border-bottom: 1px solid #eee;
-  padding-bottom: 15px;
-}
-.about .container p {
-  line-height: 32px;
-  color: grey;
-}
 /* End About */
 
-/* Start Contact */
-.contact {
-  padding: 50px 0;
-  background-color: rgba(218, 218, 218, 0.19);
-}
-.contact h1 {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.contact .container form {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2,auto);
-  gap: 20px;
-}
-@media (max-width: 767px) {
-  .contact .container form {
-      grid-template-columns: repeat(1,auto);
-  }
-}
-.contact .container form textarea {
-  grid-row: span 3;
-  resize: none;
-}
-.contact .container form input,
-.contact .container form textarea {
-  padding: 10px 15px;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-}
-.contact .container form input:focus,
-.contact .container form textarea:focus {
-  outline-color: rgb(5 150 105);
-}
-.contact .container form input:focus::placeholder,
-.contact .container form textarea:focus::placeholder {
-  opacity: 0;
-  transition: .3s;
-}
-.contact .container form button {
-  background-color: rgb(5 150 105);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 5px;
-}
-/* End Contact */

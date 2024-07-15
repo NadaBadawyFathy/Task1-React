@@ -5,17 +5,28 @@ export class Contact extends Component {
 
     render(){
         return (
-        <div className="contact" id="contact">
-            <h1>Contact Us</h1>
+        <div className="contact pt-5 pb-5 bg-light" id="contact">
+            <h1 className="fst-italic text-center text-dark mb-5">Contact Us</h1>
             <div className="container">
-                <form>
-                    <input type="text" placeholder="Your Name"/>
-                    <textarea placeholder="Your Message" rows="6"></textarea>
-                    <input type="text" placeholder="Your Phone"/>
-                    <input type="text" placeholder="Your Email"/>
-                    <input type="text" placeholder="Subject"/>
-                    <button>Send</button>
-                </form>
+                <div className="box">
+                    <form action="">
+                        <div className="row">
+                            <div className="col-6">
+                                <input type="text" className="form-control rounded-pill border-primary shadow-none" placeholder="First name"/>
+                            </div>
+                            <div className="col-6">
+                                <input type="text" className="form-control rounded-pill border-primary shadow-none" placeholder="Last name"/>
+                            </div>
+                            <div className="col-12">
+                                <input type="email" className="form-control mt-4 rounded-pill border-primary shadow-none" placeholder="Email"/>
+                            </div>
+                            <div className="col-12">
+                                <textarea className="form-control mt-4 border-primary shadow-none" style={{resize: "none"}} rows="7" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <button type="send" className="btn mt-3 ps-5 pe-5 text-white fs-5 d-block m-auto bg-dark">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
         )
