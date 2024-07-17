@@ -5,7 +5,7 @@ export class Contact extends Component {
 
     render(){
         return (
-        <div className="contact pt-5 pb-5 bg-light" id="contact">
+        <div className="contact pt-5 pb-5" id="contact">
             <h1 className="fst-italic text-center text-dark mb-5">Contact Us</h1>
             <div className="container">
                 <div className="box">
